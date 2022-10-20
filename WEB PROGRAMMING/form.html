@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tugas form Husni</title>
+</head>
+
+<body>
+    <center>
+        <fieldset style="width: 600px;align-items: flex-start; display: flex; text-align: left;">
+            <legend>
+                <h3>Form Pendaftaran Pasien</h3>
+
+            </legend>
+            <form action="" method="post" enctype="multipart/form-data">
+                <label for="nama">Nama Lengkap : </label>
+                <input type="text" name="nama" id="nama">
+                <div style="margin-top: 10px;">
+                    <label>Jenis Kelamin: </label>
+                    <input type="radio" name="jk" id="l" value="L">
+                    <label for="l">Laki - laki</label>
+                    <input type="radio" name="jk" id="p" value="P">
+                    <label for="p">Perempuan</label>
+                </div>
+
+                <div style="margin-top: 10px;">
+                    <label for="alamat">Alamat:</label>
+                    <textarea type="text" name="alamat" id="alamat" cols="75" rows="7"></textarea>
+
+                </div>
+                <div style="padding-top: 10px;">
+                    <label for="poli">Poli Tujuan:</label>
+                    <select name="poli" id="poli">
+                        <option value="anak">Poli Anak</option>
+                        <option value="gigi">Poli Kandungan</option>
+                        <option value="paru">Poli Paru</option>
+                        <option value="internis">Poli Internis</option>
+                    </select>
+                    <label style="padding-left: 10px;" for="dokter">Dokter Tujuan:</label>
+                    <select name="dokter" id="poli">
+                        <option value="rita">dr. Rita, Sp.A</option>
+                        <option value="reza">dr. Reza, Sp.Og</option>
+                    </select>
+                </div>
+
+                <div style="margin-top: 10px;">
+                    <input type="checkbox" name="asuransi" id="asuransi">
+                    <label for="asuransi">Saya menggunakan asuransi</label>
+                    <input type="checkbox" name="pendamping" id="pendamping">
+                    <label for="pendamping">Saya membawa pendamping</label>
+                </div>
+
+                <div style="margin: 20px;">
+                    <label for="ktp">
+                        Upload KTP anda:
+                    </label>
+                    <input type="file" name="ktp" id="ktp">
+                </div>
+            </form>
+        </fieldset>
+    </center>
+
+</body>
+
+</html>
